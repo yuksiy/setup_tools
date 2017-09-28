@@ -1,0 +1,39 @@
+# large_segment	pkg_group	file_name	mode	owner	group	vcs	fil_import	fil_import_src	host_1	host_2	host_3	setup_manual	remark
+# OS関連													
+	os_phase1	/etc/gai.conf	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/hosts	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/network/interfaces	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/nsswitch.conf	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/resolv.conf	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/systemd/journald.conf	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/etc/systemd/timesyncd.conf	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/root/.bash_logout	0644	root	root	1	1	/etc/skel/.bash_logout	1	1	1	os_phase1.txt	
+	os_phase1	/root/.bashrc	0644	root	root	1	1		1	1	1	os_phase1.txt	
+	os_phase1	/root/.profile	0644	root	root	1	1		1	1	1	os_phase1.txt	
+													
+	os_phase2	/etc/fstab	0644	root	root	1	1		1	1	1	os_phase2.txt	
+													
+# MAIL関連													
+	postfix	/etc/postfix/main.cf	0644	root	root	1	1	/usr/share/postfix/main.cf.dist		1		postfix.txt	
+	postfix	/etc/postfix/master.cf	0644	root	root	1	1			1		postfix.txt	
+	postfix	/etc/postfix/sasl_passwd	0600	root	root	-	-			1		postfix.txt	
+													
+# WEB関連													
+	apache	/etc/apache2/apache2.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/ports.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/webgroup	0640	root	www-data	-	-				1	apache.txt	
+	apache	/etc/apache2/webpasswd	0640	root	www-data	-	-				1	apache.txt	
+	apache	/etc/apache2/conf-available/charset.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/conf-available/security.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/sites-available/000-default.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/sites-available/default-ssl.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/mods-available/autoindex.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/apache2/mods-available/negotiation.conf	0644	root	root	1	1				1	apache.txt	
+	apache	/etc/logrotate.d/apache2	0644	root	root	1	1				1	apache.txt	
+													
+# その他													
+	pkg_a	/etc/pkg_a_1.conf	0644	root	root	1	1		1	1	1	-	
+	pkg_a	/etc/pkg_a_2.conf	0644	root	root	1	1		1	1	1	-	
+													
+	pkg_b	/etc/pkg_b_1.conf	0644	root	root	1	1		1	1	1	-	
+	pkg_b	/etc/pkg_b_2.conf	0644	root	root	1	1		1	1	1	-	

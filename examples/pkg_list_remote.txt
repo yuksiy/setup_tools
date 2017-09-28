@@ -1,0 +1,16 @@
+# large_segment	pkg_group	pkg_name	target_release	host_1	host_2	host_3	setup_manual	remark
+# OS関連								
+	os_misc	nkf		1	1	1	-	
+	os_misc	rsync		1	1	1	-	
+								
+# MAIL関連								
+	postfix	postfix			1		postfix.txt	
+	postfix	libsasl2-modules			1		postfix.txt	
+								
+# WEB関連								
+	apache	apache2				1	apache.txt	
+	apache	libapache2-mod-php5				1	apache.txt	
+								
+# その他								
+	misc	pkg_a		1	1	1	-	
+	misc	pkg_b		1	1	1	-	
